@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>Daouda Sports Stats</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">D</span><span>DAOUDA <b>SPORTS STATS</b></span></a>
+    <span class="live-pill"><i></i> CENTRE SPORTIF</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">LE SPORT, EN UN COUP D'ŒIL</p>
+        <h1>Vis les matchs.<br><em>Comprends le jeu.</em></h1>
+        <p class="sub">Scores, calendriers, classements et statistiques réunis au même endroit.</p>
+        <a class="primary" href="#matchs">Voir les matchs <span>→</span></a>
+      </div>
+      <div class="hero-ball" aria-hidden="true">⚽</div>
+    </section>
+
+    <nav class="tabs" aria-label="Sports">
+      <button class="tab active" data-sport="football">⚽ Football</button>
+      <button class="tab" data-sport="basketball">🏀 Basketball</button>
+      <button class="tab" data-sport="tennis">🎾 Tennis</button>
+    </nav>
+
+    <section id="matchs" class="section">
+      <div class="section-heading"><div><p class="eyebrow">AU PROGRAMME</p><h2>Matchs à suivre</h2></div><span class="demo-tag">EXEMPLES · DÉMO</span></div>
+      <div id="match-list" class="match-grid"></div>
+    </section>
+
+    <section class="section lower-grid">
+      <article class="panel">
+        <div class="section-heading"><div><p class="eyebrow">SAISON</p><h2>Classement</h2></div><span class="muted">Exemple</span></div>
+        <div class="table-wrap"><table><thead><tr><th>#</th><th>Équipe</th><th>Pts</th></tr></thead><tbody id="ranking"></tbody></table></div>
+      </article>
+      <article class="panel stats-panel">
+        <p class="eyebrow">ESPACE STATISTIQUES</p><h2>Les chiffres<br>font le jeu.</h2>
+        <p class="muted">Retrouve bientôt les statistiques détaillées des équipes, joueurs et compétitions.</p>
+        <div class="stat-row"><span>Matchs</span><b>—</b></div>
+        <div class="stat-row"><span>Compétitions</span><b>—</b></div>
+        <div class="stat-row"><span>Sports</span><b>03</b></div>
+      </article>
+    </section>
+    <p class="notice">Cette version est une maquette : les scores et classements affichés sont des exemples, pas des résultats en direct.</p>
+  </main>
+  <footer><span>© 2026 Daouda Sports Stats</span><span>La passion du sport, partout.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
