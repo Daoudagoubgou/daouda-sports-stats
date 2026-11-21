@@ -6,7 +6,7 @@ from flask import Flask, jsonify, render_template_string
 app = Flask(__name__)
 
 API_KEY = os.environ.get("API_FOOTBALL_KEY")
-
+print("API KEY CONFIGURED:", bool(API_KEY))
 @app.route("/")
 def home():
     return "Daouda Sports Stats - Serveur actif !"
