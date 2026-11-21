@@ -24,7 +24,7 @@ def live_matches():
             url,
             headers=headers,
             params={"live": "all"},
-            timeout=15
+            timeout=8
         )
         response.raise_for_status()
         return jsonify(response.json())
